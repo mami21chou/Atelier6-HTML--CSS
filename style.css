@@ -1,6 +1,6 @@
 *{
     margin: 0%;
-  
+   font-family:Arial, Helvetica, sans-serif ;
 }
 
 header{
@@ -8,8 +8,9 @@ header{
     background-color: white;
     position: fixed;
     width: 100%; 
-    display: block;
-    z-index: 1;
+    
+    z-index: 4; 
+   
     
 }
 
@@ -19,6 +20,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
   
 }
 
@@ -31,6 +33,8 @@ nav{
     display: flex;
     gap: 50px;
     
+    
+    
   
 }
 
@@ -41,6 +45,7 @@ nav{
 
 .bienvenue ul li a{
     text-decoration: none;
+    color: rgb(0, 0, 37);
 }
 
 /* .bienvenue ul li a:hover{
@@ -66,13 +71,19 @@ nav{
 
 .connect ul li a {
     text-decoration: none;
-    
+    color: rgb(0, 0, 37);
 }
 
 ul li .inscri{
     padding: 10px;
     background-color: #E65100;
     border-radius: 8px; 
+}
+ul li .inscri:hover{
+    cursor: pointer;
+    background-color: green;
+    color: white;
+
 }
 
 nav ul li a:hover{
@@ -107,7 +118,7 @@ nav ul li a:hover{
     position: relative;
     width: 50%;
     margin-top: 5%;
-    
+   
 }
 .sect .left{
     position: relative;
@@ -126,6 +137,11 @@ nav ul li a:hover{
     height: 250px;
     border-radius: 30px;
     justify-items: center;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    back
+    
    
 }
 
@@ -294,7 +310,7 @@ nav ul li a:hover{
     
 }
 
-.sect5 .bu{
+.sect5 .bu {
     margin-top: 35px;
      padding: 15px;
     border-radius: 8px;
@@ -304,13 +320,20 @@ nav ul li a:hover{
     font-size: 15px;
     color: #E65100;
 }
-/* .sect5 .bu a{
-   
+
+.sect5 .bu a{
     text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
     color: #E65100;
     
+}
+.sect5 .bu a:hover{
+    cursor: pointer;
+    color: green;
+}
    
-} */
+  
 
 .sect5 .pret{
     color: white;
@@ -354,9 +377,335 @@ footer .soulign{
     width: 100%;
 }
 
+footer .divfooter1 p a:hover{
+    cursor: pointer;
+    color: aqua;
+
+}
+
 hr{
     color: black;
     border: none;
     height: 2px;
     background-color: rgb(20, 20, 20);
+}
+
+
+
+
+
+/* css traiteur.html */
+
+.section1 .divsection1{
+    background-image: linear-gradient(rgba(192,79,19,0.3)), url(images/banner-caterers.jpg);
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+    padding: 150px;
+    color: white;
+    text-align: center;
+    
+}
+
+
+.section1 .divsection1 .h1divsection1{
+     padding-right: 350px;
+           
+}
+
+.section2{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.section2 .divsection2{
+    display: flex;
+    gap: 250px;
+    align-items: center;
+    justify-content: center;
+}
+
+.section2 .divsection2 .div2section2{
+    display: flex;
+    gap: 20px;   
+}
+
+.section2 .divsection2 .div1section2{
+    margin-left: 85px;
+}
+
+.section2 .divsection2 .div5section2{
+   display: flex;
+   padding-right: 200px;
+   gap: 20px;
+   align-items: center;
+}
+
+#specialite{
+    padding: 10px;
+    border-radius: 6px;
+}
+
+#statut{
+    padding: 10px;
+    border-radius: 6px;
+}
+
+
+.div5section2 .div3section2 #filtre{
+    background-color: #E65100;
+    padding:  10px;
+    border-radius: 6px;
+    color: white;
+    margin-top: 14px;  
+   
+}
+
+.div5section2 .div3section2 #filtre:hover{
+    cursor: pointer;
+    background-color: green;
+}
+
+#reinitialiser{
+    background-color: white;
+    padding:  10px;
+    border-radius: 6px;
+    color: black;
+    margin-top: 14px;
+}
+
+#reinitialiser:hover{
+    cursor: pointer;
+    background-color: green;
+}
+
+.section3 .divsection3 .div1section3 .verifie{
+    position: absolute;
+    background-color: rgb(124, 243, 124);
+    color: green;
+    margin-top: -6%;
+    border-radius: 6px;
+    padding: 2px;
+    margin-left: 16%;
+    
+
+}
+
+.section3 .divsection3 .div1section3{
+    width: 35%;
+} 
+
+.maintraiteur{
+    background-color: #FFF3E0;
+}
+
+.section3 .divsection3 .div1section3 .imgsection3{
+    width: 300px;
+    height: 170px;
+    object-fit: cover;
+    background-position: center;
+    position: absolute;
+    border-radius: 10px;
+    margin-top: -7%;
+    margin-left: -13%;
+    box-shadow: 5px 5px 30px rgb(246, 232, 232); 
+}
+
+.section3 .divsection3 .div1section3 .imgsection3:hover{
+    cursor: pointer;
+    width: 900px;
+    height: 400px;
+    object-fit: cover;
+    background-position: center;
+    z-index: 1;
+}
+
+.section3 .divsection3{
+    display: flex;
+    box-shadow: 5px 5px 30px rgb(243, 235, 235); 
+    align-items: center;
+    width: 70%;
+    border-radius: 6px;
+    text-align: center;
+    margin-left: 15%;
+}
+
+.section3 .divsection3 .div2section3 .specialite{
+    display: flex;
+    gap: 4px;
+
+
+}
+
+.section3 .divsection3 .div2section3 .specialite p{
+    padding: 1px;
+    background-color: rgb(202, 197, 197);
+    border-radius: 3px;
+
+
+}
+
+.section3 .divsection3 .div2section3{
+    text-align: justify;
+    color: rgb(82, 77, 77);
+}
+
+.section3 .divsection3 .div3section3{
+     margin-left: 30%; 
+}
+
+.section3 .divsection3 .div3section3 button{
+    padding: 10px;
+    border-radius: 6px;
+    background-color: black;
+    color: white;
+    margin-top: 100%;
+}
+
+.section3 .divsection3 .div3section3 button:hover{
+    cursor: pointer;
+    background-color: #E65100;
+}
+
+.section3 .divsection3 .div3section3 p i {
+    color: orange;
+}
+
+
+
+
+/* css pour la page inscription.hmtl  */
+.formulaire{
+    margin-left: 15%;
+    margin-right: 15%;
+    
+    
+
+}
+
+.inscription-traiteur{
+    background-color: rgb(248, 248, 177);
+}
+.section-un .div-un{
+background-image: linear-gradient(rgba(192,79,19,0.2)), url(images/banner-caterers.jpg);
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+    padding: 150px;
+    color: white;
+    text-align: center;   
+}
+
+.section-un .div-un .texte{
+    text-align: justify;
+}
+.section-un .div-un .texte p{
+    color: #FFB300;
+    font-weight: 50px;
+    font-size: 20px;
+}
+
+form fieldset .legendbase{
+    display: flex;
+    /* justify-content: space-between; */
+    text-align: justify;
+    gap: 300px;
+}
+
+.legendservice{
+    display: flex;
+    gap: 155px;
+}
+
+.legendcontact{
+    display: flex;
+    gap: 200px;
+    
+
+}
+
+form fieldset .legendbase input{
+    
+    padding: 5px 30px;
+    border: 1px;
+    border: solid grey;
+    border-radius: 8px;
+}
+#email{
+    background-color: rgb(200, 231, 234);
+}
+#password{
+    background-color: rgb(200, 231, 234);
+
+}
+
+form fieldset .legendpro input{
+    padding: 5px 300px;
+    border: 1px;
+    border: solid grey;
+    border-radius: 8px;
+}
+
+#categorie{
+    padding: 5px 300px;
+    border: 1px;
+    border: solid grey;
+    border-radius: 8px;
+    align-items: start;
+    
+}
+
+#description{
+    padding: 50px 300px;
+    border: 1px;
+    border: solid grey;
+    border-radius: 8px;
+}
+
+.legendcontact input{
+     padding: 5px 30px;
+    border: 1px;
+    border: solid grey;
+    border-radius: 8px;
+}
+
+/* #Photo input{
+    color: #9c5f3e;
+    background-color: #FFB300;
+} */
+
+fieldset .photo{
+    color: #9c5f3e;
+    background-color: #FFB300;
+}
+
+
+#Inscriform{
+    padding: 10px;
+    background-color: #E65100;
+    border-radius: 8px; 
+    float: right;   
+}
+
+#Inscriform:hover{
+    cursor: pointer;
+    background-color: green;
+    color: white;
+}
+
+#footerinscri{
+    margin-top: 5%;
+}
+
+fieldset{
+    border-radius: 10px;
+/*     box-shadow: 5px 5px 30px rgb(246, 232, 232);
+ */}
+
+form{
+    background-color: white;
+
 }
