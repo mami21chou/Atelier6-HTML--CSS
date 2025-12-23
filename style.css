@@ -650,11 +650,13 @@ form fieldset .legendpro input{
 }
 
 #categorie{
+    display: flex;
     padding: 5px 300px;
     border: 1px;
     border: solid grey;
     border-radius: 8px;
     align-items: start;
+    
     
 }
 
