@@ -5,10 +5,10 @@
 
 header{
     
-    background-color: white;
-    position: fixed;
-    width: 100%; 
+    background-color: #ffffff;
     
+    width: 100%; 
+    position: fixed;
     z-index: 4; 
    
     
@@ -78,6 +78,7 @@ ul li .inscri{
     padding: 10px;
     background-color: #E65100;
     border-radius: 8px; 
+    
 }
 ul li .inscri:hover{
     cursor: pointer;
@@ -140,7 +141,7 @@ nav ul li a:hover{
     object-fit: cover;
     background-position: center;
     background-size: cover;
-    back
+    
     
    
 }
@@ -394,7 +395,7 @@ hr{
 
 
 
-/* css traiteur.html */
+/* ----------------------------------css traiteur.html------------------------------------------- */
 
 .section1 .divsection1{
     background-image: linear-gradient(rgba(192,79,19,0.3)), url(images/banner-caterers.jpg);
@@ -459,6 +460,7 @@ hr{
     background-color: #E65100;
     padding:  10px;
     border-radius: 6px;
+    border: none;
     color: white;
     margin-top: 14px;  
    
@@ -499,7 +501,7 @@ hr{
 } 
 
 .maintraiteur{
-    background-color: #FFF3E0;
+    background-color: #fffbeb;
 }
 
 .section3 .divsection3 .div1section3 .imgsection3{
@@ -557,7 +559,12 @@ hr{
      margin-left: 30%; 
 }
 
-.section3 .divsection3 .div3section3 button{
+.section3 .divsection3 .div3section3 button a{
+    text-decoration: none;
+    color: white;
+}
+
+.section3 .divsection3 .div3section3 button {
     padding: 10px;
     border-radius: 6px;
     background-color: black;
@@ -577,13 +584,10 @@ hr{
 
 
 
-/* css pour la page inscription.hmtl  */
+/* --------------------------------css pour la page inscription.hmtl ------------------------------ */
 .formulaire{
     margin-left: 15%;
     margin-right: 15%;
-    
-    
-
 }
 
 .inscription-traiteur{
@@ -608,11 +612,17 @@ background-image: linear-gradient(rgba(192,79,19,0.2)), url(images/banner-catere
     font-size: 20px;
 }
 
+.formulaire{
+/*     box-shadow: 21px 15px 0 1px rgb(215, 10, 10);
+ */
+}
+
 form fieldset .legendbase{
     display: flex;
     /* justify-content: space-between; */
     text-align: justify;
     gap: 300px;
+
 }
 
 .legendservice{
@@ -630,54 +640,45 @@ form fieldset .legendbase{
 form fieldset .legendbase input{
     
     padding: 5px 30px;
-    border: 1px;
-    border: solid grey;
-    border-radius: 8px;
+    /* border: 1px; */
+    /* border: solid grey;  */
+ */    /* border-radius: 8px; */
 }
 #email{
     background-color: rgb(200, 231, 234);
 }
 #password{
-    background-color: rgb(200, 231, 234);
+    background-color: aquamarine;
 
 }
 
 form fieldset .legendpro input{
     padding: 5px 300px;
-    border: 1px;
-    border: solid grey;
-    border-radius: 8px;
+    /* border: 1px; */
+    /* border: solid grey; */
+     border-radius: 8px;
 }
 
 #categorie{
     display: flex;
     padding: 5px 300px;
-    border: 1px;
-    border: solid grey;
     border-radius: 8px;
     align-items: start;
-    
+
     
 }
 
 #description{
     padding: 50px 300px;
-    border: 1px;
-    border: solid grey;
     border-radius: 8px;
 }
 
 .legendcontact input{
      padding: 5px 30px;
-    border: 1px;
-    border: solid grey;
     border-radius: 8px;
 }
 
-/* #Photo input{
-    color: #9c5f3e;
-    background-color: #FFB300;
-} */
+
 
 fieldset .photo{
     color: #9c5f3e;
@@ -703,11 +704,299 @@ fieldset .photo{
 }
 
 fieldset{
-    border-radius: 10px;
-/*     box-shadow: 5px 5px 30px rgb(246, 232, 232);
- */}
+   border: none;
+}
 
 form{
     background-color: white;
 
+}
+
+
+
+
+/* --------------------css pour la partie detail-traiteur.html --------------------------------------*/
+
+#headerdetails {
+    margin-top: 0%;
+    position: static;
+}
+.bodydetails{
+    background-color: #FFFFB2;
+}
+
+.section1details .div1section1details .img1detailsection1{
+    box-shadow: 5px 5px 30px #e8e89a;
+    height: 300px;
+    width: 1260px;
+    margin-left: 15px;
+    margin-right: 15px; 
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    border-radius: 10px;  
+}
+
+.section1details .div1section1details .img1detailsection1:hover{
+    cursor: pointer;
+    width: 1260px;
+    height: 700px;
+}
+
+.section1details .div1section1details .verifie{
+    position: absolute;
+    color: green;
+    margin-top: -2%;
+    border-radius: 6px;
+    padding: 2px;
+    margin-left: 8%;   
+}
+
+.section1details .div1section1details .etoile{
+    color: orange;
+    margin-top: -2%;
+    margin-left: 3%;
+    padding: 2px;
+}
+.section1details .div1section1details{
+    margin-top: 4%;
+}
+
+.section2details{
+    display: grid;
+    grid-template-columns: 70% 27%;
+    margin-left: 15px;
+    margin-top: 20px;
+    gap: 20px;
+
+  
+}
+
+.section2details .leftsection2details .divleftsection2details{
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 30px #e8e89a;
+    
+}
+
+
+.divServicesproposes{
+    display: flex;
+    gap: 40%; 
+}
+
+.divServicesproposes p i{
+    color: rgb(21, 232, 21);
+}
+
+.section2details .rightsection2details .divrightsection2details{
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 30px #e8e89a;
+
+
+}
+.rightsection2details .languesparlees{
+    display: flex;
+    gap: 15px;
+}
+
+.rightsection2details .languesparlees p{
+    background-color: rgb(202, 198, 198);
+    border-radius: 10px;
+    padding: 3px;
+   
+}
+
+.divSpecialites{
+    display: flex;
+    gap: 15px;
+}
+
+.divSpecialites p{
+     background-color: rgb(202, 198, 198);
+    border-radius: 10px;
+    padding: 3px;
+}
+
+#contactersection2details{
+    background-color: #4338CA;
+    padding: 4px 35%;
+    color: white;
+    font-weight: 100;
+    font-size: 15px;
+    border-radius: 8px;
+}
+
+
+#contactersection2details:hover{
+    cursor: pointer;
+    background-color: green;
+    
+}
+
+/* -------------------css connexion.html---------------------------------------------------------- */
+
+.headerconnexion{
+    position: static;
+}
+#formulaireconnexion{
+    background-color: white;
+    width: 400px;
+    margin-top: 8%;
+    margin-left: 30%;
+    padding: 5% 5%;
+    margin-bottom: 8%;  
+}
+#formulaireconnexion fieldset .divconnexion{
+    display: flex;
+    gap: 3%;   
+}
+#formulaireconnexion legend {
+    text-align: center;
+}
+.bodyconnexion{
+    background-color: #dcedf3;
+}
+#formulaireconnexion input{
+    padding: 4px 30%;
+    gap: 20px;
+    background-color: white;  
+}
+.pcolor{
+    color: #E65100;
+}
+.seConnecter{
+    padding: 0.5% 47%;
+    background-color: #E65100;
+    color: white;
+}
+input{
+    border: 1px solid grey;
+} 
+
+/* ---------------css dashboard.html-------------------------------------------------------------- */
+
+
+#grandiv{
+    display: grid;
+    grid-template-columns: 20% 70%;
+    
+}
+
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+     box-shadow: 5px 5px 30px #e8e89a;
+     margin-top: 5%;
+     margin-bottom: 10%;
+     
+    
+}
+
+.logorestau{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    align-items: center;
+    vertical-align: middle;
+    margin-right: 3%;
+    
+}
+
+
+
+th, td{
+    border-bottom: 1px solid grey;
+    padding: 2%;
+}
+
+th{
+    background-color: hwb(0 95% 2%);
+}
+
+.headerdashboard{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3%;
+    margin-top: 5%;
+     
+}
+
+.fieldset{
+    /* display: flex; */
+    box-shadow: 5px 5px 30px #e8e89a;
+    justify-content: space-between;
+    padding: 3%;
+    display: grid;
+    grid-template-columns: 90% 10%;
+    align-items: center;
+    
+    
+}
+
+.selectzone{
+    padding: 1% 40%;
+    border-radius: 5px;
+}
+
+
+ul li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+td a:hover{
+    cursor: pointer;
+    font-size: 1.5rem;
+
+}
+
+.attente{
+    color: #d3a333;
+}
+
+.modifie{
+    color: #4338CA;
+    margin-right: 10%;
+}
+.supprime{
+    color: red;
+}
+.verifie{
+    color: green;
+}
+
+
+.div1{
+    display: grid;
+    grid-template-rows: 90% 5%;
+    background-color: #fffbeb;
+    text-align: justify;
+
+}
+
+.leftdiv1 ul li a{
+    margin-left: 0%;
+    padding-bottom: 20%;
+    color: #E65100;
+}
+
+.leftdiv1 ul li a:hover{
+    cursor: pointer;
+    padding: 1.5% 15%;
+    background-color: #E65100;
+    color: white;
+
+}
+
+.Div2{
+    margin-left: 10%;
 }
